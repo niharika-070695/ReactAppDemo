@@ -9,15 +9,20 @@ import Electronics from "./components/products/categories/electronics/Electronic
 import Jewellery from "./components/products/categories/jewellery/Jewellery";
 import Mensclothing from "./components/products/categories/mensclothing/Mensclothing";
 import Womensclothing from "./components/products/categories/womensclothing/Womensclothing";
+import UserNames from "./components/user-names/UserNames";
+import PageNotFound from "./components/pagenotfound/PageNotFound";
+import A from "./components/parent-child/A";
 
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import AllProducts from "./components/allproducts/AllProducts";
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <Routes>
+      <A />
+      {/* <Routes>
         <Route path={"/"} element={<Home />} />
         <Route path={"/products"} element={<Products />}>
           <Route path={"electronics"} element={<Electronics />} />
@@ -28,7 +33,10 @@ function App() {
 
         <Route path={"/counter"} element={<Counter />} />
         <Route path={"/imagecomp"} element={<ImageComp />} />
-      </Routes>
+        <Route path={"/allproducts"} element={<AllProducts />} />
+        <Route path={"/usernames"} element={<UserNames />} />
+        <Route path={"*"} element={<PageNotFound />} />
+      </Routes> */}
     </div>
   );
 }
