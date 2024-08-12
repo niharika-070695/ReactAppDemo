@@ -7,6 +7,7 @@ function B() {
       <h2>B component</h2>
       <br />
       <hr />
+      <hr />
       <C />
     </div>
   );

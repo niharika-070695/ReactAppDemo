@@ -12,6 +12,8 @@ import Womensclothing from "./components/products/categories/womensclothing/Wome
 import UserNames from "./components/user-names/UserNames";
 import PageNotFound from "./components/pagenotfound/PageNotFound";
 import A from "./components/context-api/A";
+import HomeContext from "./components/context-api/HomeContext";
+import Name from "./components/child-parent/Name";
 
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -21,7 +23,9 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <A />
+      <Name />
+      {/* <HomeContext /> */}
+      {/* <A /> */}
       {/* <Routes>
         <Route path={"/"} element={<Home />} />
         <Route path={"/products"} element={<Products />}>
