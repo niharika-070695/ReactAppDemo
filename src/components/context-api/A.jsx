@@ -7,7 +7,7 @@ function A() {
       <h2>A component</h2>
       <br />
       <button>Submit</button>
-      <button>count</button>
+
       <br />
       <hr />
       <myfirstContext.Provider value={100}>
